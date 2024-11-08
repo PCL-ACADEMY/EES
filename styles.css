@@ -1,0 +1,207 @@
+/* Reset CSS */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #1b096d;
+    background: #f0f0f0;
+}
+
+/* Header Styling */
+#header {
+    background: #0e0e88;
+    color: #f5f2f2;
+    padding: 1rem 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 2000px;
+    margin: auto;
+    padding-left: 1rem;
+}
+
+.logo-img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 2rem;
+}
+
+#header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#header nav ul li {
+    margin: 0 1rem;
+}
+
+#header nav ul li a {
+    color: #f2f4f7;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#header nav ul li a:hover {
+    background-color: #020235;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+#header nav ul li a.active {
+    background-color: #060644;
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url("https://enerhia.ph/media/pages/home/883916d5ff-1678315818/image-4-1920x.webp") no-repeat center center/cover;
+    color: #ffffffe3;
+    padding: 11rem 100px;
+    text-align: center;
+}
+
+.ees {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #ffffffde;
+    letter-spacing: 10px;
+}
+
+.sub-title {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-top: 1rem;
+}
+
+.hero-section p {
+    margin-top: 0rem;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 2.75;
+}
+
+.hero-section .btn {
+    margin-top: 10rem;
+    background: #010122;
+    color: #cabdbde0;
+    padding: 0.75rem 3rem;
+    text-decoration: none;
+    font-size: 13Srem;
+    border-radius: 200px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background: #020235;
+    transform: translateY(-3px);
+}
+
+/* About and Events Sections */
+.about-section, .events-section {
+    padding: 4rem 0;
+    text-align: center;
+    background: #8a939cc0;
+}
+
+.about-container, .events-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0e0e88;
+    margin-bottom: 1.5rem;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 0;
+    background-color: #368fe9;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    background: #5d84da;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.contact-container h2 {
+    font-size: 2rem;
+    color: #0e0e88;
+}
+
+.contact-container form input,
+.contact-container form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-container form input:focus,
+.contact-container form textarea:focus {
+    border-color: #0e0e88;
+    box-shadow: 0 0 5px rgba(14, 14, 136, 0.2);
+    outline: none;
+}
+
+.contact-container form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-container form .btn {
+    background: #0e0e88;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-container form .btn:hover {
+    background: #020235;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+#footer {
+    background: #FFFFFF;
+    color: #000000;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-container p {
+    margin: 0;
+}
