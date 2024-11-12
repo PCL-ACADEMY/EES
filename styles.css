@@ -1,4 +1,4 @@
-/* Reset CSS */ 
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -130,6 +130,49 @@ h2 {
     font-size: 2rem;
     color: #0e0e88;
     margin-bottom: 1.5rem;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 4rem 0;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.gallery-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.gallery-item img, .gallery-item video {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.gallery-item p {
+    padding: 0.5rem;
+    color: #0e0e88;
+    font-weight: 600;
+}
+
+/* Video Styling */
+.gallery-item video {
+    display: block;
 }
 
 /* Contact Section */

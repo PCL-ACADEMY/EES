@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energy Efficiency Summit</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your user ID
+        (function() {
+            emailjs.init("analytics.admin@pcl.com.ph"); // Replace "YOUR_USER_ID" with your EmailJS user ID
+        })();
+
+        // Function to handle form submission with EmailJS
+        function sendMail(event) {
+            event.preventDefault();
+            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', event.target)
+                .then(function(response) {
+                    alert('Message sent successfully!');
+                }, function(error) {
+                    alert('There was an error sending your message.');
+                });
+        }
+    </script>
 </head>
 <body>
 
@@ -16,17 +34,17 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#home" class="active">Home</a></li> <!-- Links to Hero Section -->
-                <li><a href="#about">About</a></li>             <!-- Links to About Section -->
-                <li><a href="#events">Events</a></li>           <!-- Links to Events Section -->
-                <li><a href="#contact">Contact</a></li>         <!-- Links to Contact Section -->
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
 <!-- Hero Section (Home) -->
-<section id="#home" class="hero-section">
+<section id="home" class="hero-section">
     <div class="hero-container">
         <div class="ees">EES</div>
         <div class="sub-title">Energy Efficiency Summit</div>
@@ -40,6 +58,38 @@
     <div class="about-container">
         <h2>About Us</h2>
         <p>Our mission is to reduce energy consumption and enhance efficiency through innovative solutions.</p>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery-section">
+    <div class="gallery-container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="C:/Users/PCL-Camille/OneDrive - Office 365/Desktop/Website/EES/photo_2024-11-12_09-47-45.jpg" alt="Gallery Image 1">
+                <p>Enerhia With Popeyes COO</p>
+            </div>
+            <div class="gallery-item">
+                <img src="C:/Users/PCL-Camille/OneDrive - Office 365/Desktop/Website/EES/photo_2024-08-12_14-16-15.jpg" alt="Gallery Image 2">
+                <p>Popeyes Contract</p>
+            </div>
+            <div class="gallery-item">
+                <img src="C:/Users/PCL-Camille/OneDrive - Office 365/Desktop/Website/EES/photo_2024-10-11_14-57-41.jpg" alt="Gallery Image 3">
+                <p>Landers NTP</p>
+            </div>
+            <div class="gallery-item">
+                <img src="C:/Users/PCL-Camille/OneDrive - Office 365/Desktop/Website/EES/photo_2024-10-11_14-57-42-xzKNJr5ok-transformed.jpeg" alt="Gallery Image 4">
+                <p>Landers NTP</p>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="C:/Users/PCL-Camille/OneDrive - Office 365/Desktop/Website/EES/video_2024-11-12_09-55-37.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Popeyes</p>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -59,10 +109,10 @@
     <div class="contact-container">
         <h2>Contact Us</h2>
         <p>Reach out for more information on our energy efficiency solutions.</p>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+        <form onsubmit="sendMail(event)">
+            <input type="text" name="user_name" placeholder="Your Name" required>
+            <input type="email" name="user_email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit" class="btn">Submit</button>
         </form>
     </div>
