@@ -5,16 +5,11 @@
     box-sizing: border-box;
 }
 
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     color: #1b096d;
     background: #f0f0f0;
+    scroll-behavior: smooth;
 }
 
 /* Header Styling */
@@ -27,8 +22,7 @@ body {
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    max-width: 2000px;
+    max-width: 1200px;
     margin: auto;
     padding-left: 1rem;
 }
@@ -42,6 +36,7 @@ body {
 #header nav ul {
     display: flex;
     list-style-type: none;
+    margin-left: auto;
 }
 
 #header nav ul li {
@@ -64,16 +59,11 @@ body {
     transform: scale(1.1);
 }
 
-#header nav ul li a.active {
-    background-color: #060644;
-    color: #ffffff;
-}
-
 /* Hero Section */
 .hero-section {
     background: url("https://enerhia.ph/media/pages/home/883916d5ff-1678315818/image-4-1920x.webp") no-repeat center center/cover;
     color: #ffffff;
-    padding: 11rem 100px;
+    padding: 10rem 2rem;
     text-align: center;
 }
 
@@ -91,160 +81,137 @@ body {
     margin-top: 1rem;
 }
 
-.hero-section p {
-    margin-top: 0rem;
-    font-weight: 500;
-    font-size: 1.5em;
-    line-height: 2.75;
-}
-
 .hero-section .btn {
-    margin-top: 10rem;
+    margin-top: 3rem;
     background: #010122;
-    color: #cabdbd;
+    color: #ffffff;
     padding: 0.75rem 3rem;
     text-decoration: none;
-    font-size: 13Srem;
+    font-size: 1.5rem;
     border-radius: 200px;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.hero-section .btn:hover {
-    background: #020235;
-    transform: translateY(-3px);
-}
-
-/* About and Events Sections */
-.about-section, .events-section {
-    padding: 10rem 0;
+/* About Section */
+.about-section {
+    padding: 4rem 2rem;
+    background-color: #f0f4f7;
     text-align: center;
-    background: #81c0ffbe;
 }
 
-.about-container, .events-container {
+.about-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-container p {
     max-width: 800px;
     margin: auto;
-}
-
-h2 {
-    font-size: 2rem;s
-    color: #0e0e88;
-    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 /* Gallery Section */
 .gallery-section {
-    padding: 4rem 0;
-    background: #f0f0f0;
+    padding: 4rem 2rem;
     text-align: center;
+    background-color: #e0e7f1;
 }
 
-.gallery-container {
-    max-width: 1200px;
-    margin: auto;
+.gallery-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
 }
 
 .gallery-item {
-    border-radius: 8px;
     overflow: hidden;
-    background: #08a5d4;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    border-radius: 10px;
 }
 
 .gallery-item img, .gallery-item video {
     width: 100%;
     height: auto;
-    border-bottom: 2px solid #e0e0e0;
-}
-
-.gallery-item p {
-    padding: 0.5rem;
-    color: #0e0e88;
-    font-weight: 600;
-}
-
-/* Video Styling */
-.gallery-item video {
     display: block;
+    border-radius: 10px;
+}
+
+/* Events Section */
+.events-section {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.events-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.events-container p {
+    font-size: 1.2rem;
+    color: #333;
 }
 
 /* Contact Section */
 .contact-section {
-    padding: 4rem 0;
+    padding: 4rem 2rem;
     background-color: #5c8fc2;
-}
-
-.contact-container {
-    max-width: 600px;
-    margin: auto;
-    padding: 2rem;
-    background: #7699e4;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
-}
-
-.contact-container h2 {
-    font-size: 2rem;
-    color: #0e0e88;
-}
-
-.contact-container form input,
-.contact-container form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin: 1rem 0;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.contact-container form input:focus,
-.contact-container form textarea:focus {
-    border-color: #0e0e88;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
-    outline: none;
-}
-
-.contact-container form textarea {
-    min-height: 150px;
-    resize: vertical;
-}
-
-.contact-container form .btn {
-    background: #0e0e88;
-    color: #ffffff;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 100%;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.contact-container form .btn:hover {
-    background: #020235;
-    transform: translateY(-3px);
-}
-
-/* Footer */
-#footer {
-    background: #FFFFFF;
-    color: #000000;
-    padding: 1rem 0;
     text-align: center;
 }
 
-.footer-container p {
-    margin: 0;
+.contact-container h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
 }
+
+.contact-container p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+.contact-container form {
+    max-width: 500px;
+    margin: 2rem auto 0;
+}
+
+.contact-container input, .contact-container textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-container textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-container .btn {
+    background: #010122;
+    color: #ffffff;
+    padding: 0.75rem 2rem;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-container .btn:hover {
+    background: #020235;
+}
+
+/* Footer Section */
+footer {
+    background: #0e0e88;
+    color: #f5f2f2;
+    padding: 1rem;
+    text-align: center;
+}
+ 

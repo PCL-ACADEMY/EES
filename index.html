@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-        // Initialize EmailJS with your user ID
         (function() {
-            emailjs.init("analytics.admin@pcl.com.ph"); // Replace "YOUR_USER_ID" with your EmailJS user ID
+            emailjs.init("analytics.admin@pcl.com.ph"); // Replace with your EmailJS user ID
         })();
 
-        // Function to handle form submission with EmailJS
         function sendMail(event) {
             event.preventDefault();
             emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', event.target)
@@ -43,12 +41,12 @@
     </div>
 </header>
 
-<!-- Hero Section (Home) -->
+<!-- Hero Section -->
 <section id="home" class="hero-section">
     <div class="hero-container">
         <div class="ees">EES</div>
         <div class="sub-title">Energy Efficiency Summit</div>
-        <p>Enerhia.ph exists to transform your business’ profitability with energy reductions and IoT tech that will revolutionize the way you run your buildings and your key assets.</p>
+        <p>Enerhia.ph exists to transform your business's profitability with energy reductions and IoT tech.</p>
         <a href="#about" class="btn">Learn More</a>
     </div>
 </section>
@@ -62,32 +60,27 @@
 </section>
 
 <!-- Gallery Section -->
-<section id="OUR PARTNES" class="gallery-section">
+<section id="our-partners" class="gallery-section">
     <div class="gallery-container">
-        <h2>Gallery</h2>
+        <h2>Our Partners</h2>
         <div class="gallery-grid">
             <div class="gallery-item">
                 <img src="images/1.jpg" alt="Gallery Image 1">
-                <p></p>
             </div>
             <div class="gallery-item">
                 <img src="images/4.jpg" alt="Gallery Image 2">
-                <p></p>
             </div>
             <div class="gallery-item">
                 <img src="images/3.jpeg" alt="Gallery Image 3">
-                <p></p>
             </div>
             <div class="gallery-item">
                 <img src="images/2.jpg" alt="Gallery Image 4">
-                <p></p>
             </div>
             <div class="gallery-item">
                 <video controls>
                     <source src="images/7.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p></p>
             </div>
         </div>
     </div>
@@ -96,11 +89,8 @@
 <!-- Events Section -->
 <section id="events" class="events-section">
     <div class="events-container">
-        <h2>EVENTS</h2>
-        <div class="event-list">
-            <div class="event-item">November 8, 2024</div>
-            <div class="event-item">RAMADA BY WYNDHAM, MANILA</div>
-        </div>
+        <h2>Events</h2>
+        <p>November 8, 2024 - RAMADA BY WYNDHAM, MANILA</p>
     </div>
 </section>
 
