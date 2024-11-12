@@ -116,9 +116,9 @@ body {
 
 /* About and Events Sections */
 .about-section, .events-section {
-    padding: 4rem 0;
+    padding: 10rem 0;
     text-align: center;
-    background: #011529;
+    background: #81c0ffbe;
 }
 
 .about-container, .events-container {
