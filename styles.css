@@ -72,7 +72,7 @@ body {
 /* Hero Section */
 .hero-section {
     background: url("https://enerhia.ph/media/pages/home/883916d5ff-1678315818/image-4-1920x.webp") no-repeat center center/cover;
-    color: #ffffffe3;
+    color: #ffffff;
     padding: 11rem 100px;
     text-align: center;
 }
@@ -101,7 +101,7 @@ body {
 .hero-section .btn {
     margin-top: 10rem;
     background: #010122;
-    color: #cabdbde0;
+    color: #cabdbd;
     padding: 0.75rem 3rem;
     text-decoration: none;
     font-size: 13Srem;
@@ -153,7 +153,7 @@ h2 {
 .gallery-item {
     border-radius: 8px;
     overflow: hidden;
-    background: #ffffff;
+    background: #08a5d4;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
