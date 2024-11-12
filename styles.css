@@ -118,7 +118,7 @@ body {
 .about-section, .events-section {
     padding: 4rem 0;
     text-align: center;
-    background: #8a939cc0;
+    background: #011529;
 }
 
 .about-container, .events-container {
@@ -127,7 +127,7 @@ body {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2rem;s
     color: #0e0e88;
     margin-bottom: 1.5rem;
 }
@@ -178,14 +178,14 @@ h2 {
 /* Contact Section */
 .contact-section {
     padding: 4rem 0;
-    background-color: #368fe9;
+    background-color: #5c8fc2;
 }
 
 .contact-container {
     max-width: 600px;
     margin: auto;
     padding: 2rem;
-    background: #5d84da;
+    background: #7699e4;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
 }
@@ -210,7 +210,7 @@ h2 {
 .contact-container form input:focus,
 .contact-container form textarea:focus {
     border-color: #0e0e88;
-    box-shadow: 0 0 5px rgba(14, 14, 136, 0.2);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
     outline: none;
 }
 
