@@ -8,17 +8,44 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         (function() {
-            emailjs.init("analytics.admin@pcl.com.ph"); // Replace with your EmailJS user ID
+            emailjs.init("YOUR_USER_ID"); // Replace with your actual EmailJS user ID
         })();
 
         function sendMail(event) {
             event.preventDefault();
+            const name = event.target.user_name.value;
+            const email = event.target.user_email.value;
+            const message = event.target.message.value;
+
+            if (!name || !email || !message) {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            document.getElementById('submitButton').disabled = true;
+            document.getElementById('loadingIndicator').style.display = 'inline';
+
             emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', event.target)
                 .then(function(response) {
-                    alert('Message sent successfully!');
-                }, function(error) {
-                    alert('There was an error sending your message.');
+                    displayFormMessage('success', 'Message sent successfully!');
+                    event.target.reset();
+                })
+                .catch(function(error) {
+                    displayFormMessage('error', 'There was an error sending your message.');
+                })
+                .finally(() => {
+                    document.getElementById('submitButton').disabled = false;
+                    document.getElementById('loadingIndicator').style.display = 'none';
                 });
+        }
+
+        function displayFormMessage(type, message) {
+            const formMessage = document.getElementById('formMessage');
+            formMessage.textContent = message;
+            formMessage.className = `form-message ${type}`; // 'success' or 'error'
+            setTimeout(() => {
+                formMessage.textContent = '';
+            }, 5000);
         }
     </script>
 </head>
@@ -47,7 +74,7 @@
         <div class="ees">EES</div>
         <div class="sub-title">Energy Efficiency Summit</div>
         <p>Enerhia.ph exists to transform your business's profitability with energy reductions and IoT tech.</p>
-        <a href="#about" class="btn">Learn More</a>
+        <a href="https://Enerhia.ph" class="btn" target="_blank" rel="noopener noreferrer">Learn More</a>
     </div>
 </section>
 
@@ -99,7 +126,8 @@
     <div class="contact-container">
         <h2>Contact Us</h2>
         <p>Reach out for more information on our energy efficiency solutions.</p>
-        <form onsubmit="sendMail(event)">
+        <!-- Updated Form Action to PHP script -->
+        <form action="your-php-file.php" method="POST">
             <input type="text" name="user_name" placeholder="Your Name" required>
             <input type="email" name="user_email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
