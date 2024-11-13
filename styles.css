@@ -11,8 +11,6 @@ body {
     background: #f0f0f0;
     scroll-behavior: smooth;
     line-height: 1.6;
-    padding: 0;
-    margin: 0;
 }
 
 /* Header Styling */
@@ -34,7 +32,6 @@ body {
 .logo-img {
     max-width: 140px;
     height: auto;
-    margin-right: 2rem;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -71,13 +68,15 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: url("C:/Users/PCL-Camille/OneDrive - Office 365/Desktop/Website/EES/images/6.jpg") no-repeat center center/cover;
-    color: #ffffff;
+    color: rgb(0, 247, 255);
     font-weight: bold;
-    padding: 1rem 2rem;
-    text-shadow: 0 2px 4px rgb(0, 0, 0);
+    padding: 4rem 2rem;
     text-align: center;
     position: relative;
+    background-image: url("images/6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .hero-section:before {
@@ -87,207 +86,121 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0); /* More prominent overlay */
+    background: rgba(255, 253, 253, 0.2); /* Slight transparency for readability */
 }
 
 .ees {
     font-size: 15rem;
     font-weight: bold;
-    color: rgb(0, 255, 255);
-    letter-spacing: 4px;
-    text-shadow: 0 2px 4px rgb(0, 0, 0);
+    color: rgb(0, 247, 255);
+    letter-spacing: 6px;
+    margin-bottom: 2rem; /* Added margin for better spacing */
 }
 
 .sub-title {
     font-size: 5rem;
-    color: rgb(0, 255, 255);
-    font-weight: 700;
-    letter-spacing: 8px;
+    color: rgb(0, 247, 255);
     margin-top: 1rem;
-    text-shadow: 0 2px 4px rgb(0, 0, 0);
+    margin-bottom: 3rem; /* Adjusted margin to space out the button */
 }
 
 .hero-section .btn {
-    margin-top: 5rem;
     background: linear-gradient(135deg, #0f678a, #15158a);
     color: #ffffff;
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
     text-decoration: none;
     font-size: 1.3rem;
-    text-decoration-color: #7ee1ff;
     font-weight: bold;
     border-radius: 15px;
     border: 3px solid #1900ff;
-    transition: background 0.3s ease, transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
-    display: inline-block;
-    box-shadow: 0 8px 10px rgba(255, 255, 255, 0.1); /* Adds more subtle depth */
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 5rem; /* Reduced the distance from the subtitle */
 }
 
 .hero-section .btn:hover {
-    background: linear-gradient(135deg, #0b0b83, #1900ff);
-    transform: translateY(-5px) scale(1.05);
-    border-color: #7ee1ff;
-    box-shadow: 0 12px 10px rgba(255, 255, 255, 0.973);
+    background: linear-gradient(135deg, #0e0e88, #1f1fc1);
+    transform: scale(1.1);
 }
 
 /* About Section */
 .about-section {
-    padding: 4rem 2rem;
-    background-color: #f7faff;
+    padding: 3rem 2rem;
     text-align: center;
+    background-color: #ffffff;
+    color: #1b096d;
 }
 
-.about-container h2 {
+.about-section h2 {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #0e0e88;
+    margin-bottom: 1rem;
 }
 
-.about-container p {
-    max-width: 800px;
-    margin: auto;
+.about-section p {
     font-size: 1.2rem;
-    line-height: 1.8;
-    color: #333;
 }
 
 /* Gallery Section */
 .gallery-section {
-    padding: 4rem 2rem;
-    text-align: center;
-    background-color: #e9eef5;
+    padding: 3rem 2rem;
+    background-color: #f0f0f0;
 }
 
 .gallery-container h2 {
+    text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #0e0e88;
 }
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-}
-
-.gallery-item {
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
 }
 
 .gallery-item img, .gallery-item video {
     width: 100%;
-    height: auto;
-    display: block;
     border-radius: 10px;
-}
-
-/* Events Section */
-.events-section {
-    padding: 4rem 2rem;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-.events-container h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #0e0e88;
-}
-
-.events-container p {
-    font-size: 1.2rem;
-    color: #333;
 }
 
 /* Contact Section */
 .contact-section {
-    padding: 4rem 2rem;
-    background-color: #5c8fc2;
+    padding: 3rem 2rem;
+    background-color: #ffffff;
     text-align: center;
-    color: #ffffff;
 }
 
 .contact-container h2 {
     font-size: 2.5rem;
-    color: #ffffff;
     margin-bottom: 1rem;
 }
 
-.contact-container p {
-    font-size: 1.2rem;
-    color: #e0e0e0;
-}
-
-.contact-container input, .contact-container textarea {
+.contact-container form input, .contact-container form textarea {
     width: 100%;
     padding: 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: 2px solid #ccc;
 }
 
-.contact-container .btn {
-    background: #010122;
-    color: #ffffff;
+.contact-container form button {
     padding: 1rem 2rem;
-    border-radius: 25px;
-    border: 2px solid #2f00ff;
-    font-size: 1rem;
+    background-color: #020235;
+    color: #ffffff;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
-.contact-container .btn:hover {
-    background: #020235;
-    border-color: #f2f4f7;
-    transform: translateY(-2px); /* Subtle lift effect */
+.contact-container form button:hover {
+    background-color: #020275;
 }
 
 /* Footer Section */
 footer {
-    background: #0e0e88;
+    background-color: #020235;
     color: #f5f2f2;
-    padding: 1.5rem;
     text-align: center;
+    padding: 1.5rem;
     font-size: 1rem;
-    border-top: 5px solid #1b096d;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        align-items: center;
-        padding-left: 0;
-    }
-
-    .logo-img {
-        margin-right: 0;
-    }
-
-    #header nav ul {
-        flex-direction: column;
-        margin-top: 1rem;
-    }
-
-    #header nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    .hero-section {
-        padding: 8rem 2rem;
-    }
-
-    .ees, .sub-title {
-        font-size: 4rem;
-    }
 }
