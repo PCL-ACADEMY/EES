@@ -96,5 +96,6 @@
       "value": "c:\\Program Files\\Eclipse Adoptium\\jdk-21.0.3.9-hotspot"
     }
   ],
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }

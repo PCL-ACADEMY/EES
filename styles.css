@@ -70,13 +70,15 @@ body {
 .hero-section {
     color: rgb(0, 247, 255);
     font-weight: bold;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     text-align: center;
+    text-size-adjust: 3rem;
     position: relative;
     background-image: url("images/6.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    margin-bottom: 1rem;
 }
 
 .hero-section:before {
@@ -86,35 +88,44 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 253, 253, 0.2); /* Slight transparency for readability */
+    background: rgba(255, 253, 253, 0.2);
 }
 
+/* Main Title (EES) Styling with Glow Effect */
 .ees {
-    font-size: 15rem;
+    font-size: 20rem;
     font-weight: bold;
     color: rgb(0, 247, 255);
     letter-spacing: 6px;
-    margin-bottom: 2rem; /* Added margin for better spacing */
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(18, 20, 20, 0.849), 
+                 0 0 20px rgba(22, 87, 87, 0.5), 
+                 0 0 30px rgba(0, 255, 255, 0.3);
 }
 
+/* Subtitle Styling with Glow Effect */
 .sub-title {
     font-size: 5rem;
     color: rgb(0, 247, 255);
     margin-top: 1rem;
-    margin-bottom: 3rem; /* Adjusted margin to space out the button */
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px rgba(18, 20, 20, 0.849), 
+                 0 0 20px rgba(22, 87, 87, 0.5), 
+                 0 0 30px rgba(0, 255, 255, 0.3);
 }
 
+/* Button styling */
 .hero-section .btn {
     background: linear-gradient(135deg, #0f678a, #15158a);
     color: #ffffff;
-    padding: 1rem 2rem;
+    padding: 0.3rem 1rem;
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: bold;
-    border-radius: 15px;
-    border: 3px solid #1900ff;
+    border-radius: 10px;
+    border: 2px solid #1900ff;
     transition: background 0.3s ease, transform 0.3s ease;
-    margin-top: 5rem; /* Reduced the distance from the subtitle */
+    margin-top: 40rem;
 }
 
 .hero-section .btn:hover {
@@ -124,7 +135,7 @@ body {
 
 /* About Section */
 .about-section {
-    padding: 3rem 2rem;
+    padding: 1rem 2rem;
     text-align: center;
     background-color: #ffffff;
     color: #1b096d;
