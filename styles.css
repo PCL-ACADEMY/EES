@@ -142,12 +142,35 @@ body {
 
 .about-section h2 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
 }
 
 .about-section p {
     font-size: 1.2rem;
 }
+
+/* Events Section */
+.events-section {
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    color: #1b096d;
+}
+
+.events-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #0e0e88;
+}
+
+.events-container p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
 
 /* Gallery Section */
 .gallery-section {
